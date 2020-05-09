@@ -1,0 +1,568 @@
+name: Gopher
+type: light
+gopher-colors:
+  primary:
+    gopher-blue:
+      - &GOPHER_BLUE_1 "#01ADD8"
+      - &GOPHER_BLUE_2 "#B5E3F0"
+      - &GOPHER_BLUE_3 "#E9F3F9"
+    light-blue:
+      - &LIGHT_BLUE "#5EC9E3"
+    aqua:
+      - &AQUA "#22BBAA"
+    black:
+      - &BLACK_1 "#000000"
+      - &BLACK_2 "#1B1A1A"
+      - &BLACK_4 "#403D3D"
+      - &BLACK_5 "#535050"
+  secondary:
+    fuchsia:
+      - &FUCHSIA "#CE3062"
+    yellow:
+      - &YELLOW "#FFED88"
+  gray:
+    - &GRAY_1 "#555757"
+    - &GRAY_2 "#B5B2B3"
+    - &GRAY_3 "#CDCDCD"
+    - &GRAY_4 "#F0F0F0"
+  auxillary:
+    - &BLUE_GRAY "#253443"
+    - &PURPLE "#402B56"
+    - &PINK "#F8AADD"
+    - &WHITE "#FFFFFF"
+    - &LINK_BLUE "#0000FF"
+    - &LIGHTEN "#FFFFFF25"
+    - &DARKEN "#00000025"
+    - &TRANSPARENT "#00000000"
+    - &ERROR "#FF0000"
+  code:
+    - &CODE_BACKGROUND "#FFFFDD"
+    - &CODE_FOREGROUND "#1B1A1A"
+    - &CODE_SYMBOL "#8C8C8C"
+    - &CODE_KEYWORD "#3377EE"
+    - &CODE_TYPE "#CC2299"
+    - &CODE_BINDING "#009033"
+    - &CODE_CONSTANT "#8811EE"
+    - &CODE_STRING "#CC7700"
+    - &CODE_COMMENT "#5555558A"
+
+colors:
+  # Contrast Colors #
+  contrastActiveBorder:
+  contrastBorder:
+
+  # Base Colors #
+  focusBorder: *GOPHER_BLUE_1
+  foreground: *BLACK_1
+  widget.shadow: *TRANSPARENT
+  selection.background:
+  descriptionForeground: *BLACK_1
+  errorForeground:
+  icon.foreground:
+
+  # Window Border #
+  window.activeBorder: *BLUE_GRAY
+  window.inactiveBorder: *GRAY_1
+
+  # Text Colors #
+  textBlockQuote.background: *CODE_BACKGROUND
+  textBlockQuote.border: *GOPHER_BLUE_1
+  textCodeBlock.background: *DARKEN
+  textLink.activeForeground: *BLACK_1
+  textLink.foreground: *LINK_BLUE
+  textPreformat.foreground: *BLACK_1
+  textSeparator.foreground:
+
+  # Button Control #
+  button.background: *GOPHER_BLUE_1
+  button.foreground: *WHITE
+  button.hoverBackground: *LIGHT_BLUE
+  checkbox.background: *WHITE
+  checkbox.foreground: *GOPHER_BLUE_1
+  checkbox.border: *GRAY_2
+
+  # Dropdown Control #
+  dropdown.background: *GOPHER_BLUE_3
+  dropdown.listBackground: *GOPHER_BLUE_3
+  dropdown.border:
+  dropdown.foreground: *BLACK_1
+
+  # Scrollbar Control #
+  scrollbar.shadow: *TRANSPARENT
+  scrollbarSlider.background:
+  scrollbarSlider.hoverBackground:
+  scrollbarSlider.activeBackground:
+
+  # Badge #
+  badge.foreground: *WHITE
+  badge.background: *GOPHER_BLUE_1
+
+  # Progress Bar #
+  progressBar.background: *GOPHER_BLUE_1
+
+  # Lists and Trees #
+  list.activeSelectionBackground: *CODE_BACKGROUND
+  list.activeSelectionForeground: *CODE_FOREGROUND
+  list.dropBackground: *GOPHER_BLUE_2
+  list.focusBackground: *GOPHER_BLUE_2
+  list.focusForeground: *BLACK_1
+  list.highlightForeground: *BLACK_1
+  list.hoverBackground: *GOPHER_BLUE_2
+  list.hoverForeground: *BLACK_1
+  list.inactiveSelectionBackground: *CODE_BACKGROUND
+  list.inactiveSelectionForeground: *CODE_FOREGROUND
+  list.inactiveFocusBackground: *GOPHER_BLUE_2
+  list.invalidItemForeground:
+  list.errorForeground:
+  list.warningForeground:
+  listFilterWidget.background: *WHITE
+  listFilterWidget.outline: *BLACK_1
+  listFilterWidget.noMatchesOutline: *BLACK_1
+  list.filterMatchBackground: *CODE_BACKGROUND
+  list.filterMatchBorder: *BLACK_1
+  tree.indentGuidesStroke:
+
+  # Activity Bar #
+  activityBar.background: *BLUE_GRAY
+  activityBar.dropBackground: *LIGHTEN
+  activityBar.foreground: *WHITE
+  activityBar.inactiveForeground: *WHITE
+  activityBar.border:
+  activityBarBadge.background: *GOPHER_BLUE_1
+  activityBarBadge.foreground: *WHITE
+  activityBar.activeBorder: *GOPHER_BLUE_1
+  activityBar.activeBackground: *BLUE_GRAY
+  activityBar.activeFocusBorder: *GOPHER_BLUE_1
+
+  # Side Bar #
+  sideBar.background: *GOPHER_BLUE_3
+  sideBar.foreground: *BLACK_1
+  sideBar.border:
+  sideBar.dropBackground: *GRAY_3
+  sideBarTitle.foreground: *BLACK_1
+  sideBarSectionHeader.background: *GRAY_3
+  sideBarSectionHeader.foreground: *BLACK_1
+  sideBarSectionHeader.border:
+
+  # Editor Groups & Tabs #
+  editorGroup.border:
+  editorGroup.dropBackground: *DARKEN
+  editorGroupHeader.noTabsBackground: *CODE_BACKGROUND
+  editorGroupHeader.tabsBackground: *GOPHER_BLUE_3
+  editorGroupHeader.tabsBorder:
+  editorGroup.emptyBackground: *CODE_BACKGROUND
+  editorGroup.focusedEmptyBorder: *CODE_BACKGROUND
+  tab.activeBackground: *CODE_BACKGROUND
+  tab.unfocusedActiveBackground: *CODE_BACKGROUND
+  tab.activeForeground: *CODE_FOREGROUND
+  tab.border: *GOPHER_BLUE_3
+  tab.activeBorder:
+  tab.unfocusedActiveBorder:
+  tab.activeBorderTop:
+  tab.unfocusedActiveBorderTop:
+  tab.inactiveBackground: *GOPHER_BLUE_3
+  tab.inactiveForeground: *BLACK_1
+  tab.unfocusedActiveForeground: *GRAY_2
+  tab.unfocusedInactiveForeground: *GRAY_2
+  tab.hoverBackground:
+  tab.unfocusedHoverBackground:
+  tab.hoverBorder:
+  tab.unfocusedHoverBorder:
+  tab.activeModifiedBorder:
+  tab.inactiveModifiedBorder:
+  tab.unfocusedInactiveModifiedBorder:
+  editorPane.background: *FUCHSIA
+
+  # Editor Colors #
+  editor.background: *CODE_BACKGROUND
+  editor.foreground: *CODE_FOREGROUND
+  editorLineNumber.foreground: *CODE_FOREGROUND
+  editorCursor.foreground: *CODE_FOREGROUND
+
+  editor.selectionBackground: *GOPHER_BLUE_3
+  editor.inactiveSelectionBackground: *GRAY_3
+
+  editor.wordHighlightBackground: *BLACK_1
+  editor.wordHighlightStrongBackground: *BLACK_1
+
+  editor.findMatchBackground: *GOPHER_BLUE_2
+  editor.findMatchHighlightBackground: *GOPHER_BLUE_3
+  editor.findRangeHighlightBackground: *GOPHER_BLUE_3
+
+  editor.hoverHighlightBackground: *GOPHER_BLUE_3
+
+  editor.lineHighlightBorder:
+  editor.lineHighlightBackground: *GOPHER_BLUE_3
+
+  editorLink.activeForeground: *LINK_BLUE
+
+  editor.rangeHighlightBackground: *GOPHER_BLUE_3
+
+  editorWhitespace.foreground: *GRAY_3
+
+  editorIndentGuide.background: *GRAY_3
+
+  editorRuler.foreground: *BLACK_1
+
+  editorCodeLens.foreground: *GRAY_1
+
+  # Status Bar #
+  statusBar.background: *BLUE_GRAY
+  statusBar.foreground: *WHITE
+  statusBar.border:
+
+  statusBar.debuggingBackground: *FUCHSIA
+  statusBar.debuggingForeground: *WHITE
+  statusBar.debuggingBorder:
+
+  statusBar.noFolderBackground: *BLUE_GRAY
+  statusBar.noFolderForeground: *WHITE
+  statusBar.noFolderBorder:
+
+  statusBarItem.activeBackground: *LIGHTEN
+  statusBarItem.hoverBackground: *LIGHTEN
+
+  statusBarItem.prominentBackground: *GOPHER_BLUE_1
+  statusBarItem.prominentForeground: *WHITE
+  statusBarItem.prominentHoverBackground: *LIGHTEN
+
+  statusBarItem.remoteBackground: *GOPHER_BLUE_1
+  statusBarItem.remoteForeground: *WHITE
+
+  # Panel Colors #
+  panel.background: *GRAY_3
+  panel.border: *TRANSPARENT
+  panel.dropBackground: *DARKEN
+  panelTitle.activeBorder: *GOPHER_BLUE_1
+  panelTitle.activeForeground: *BLACK_1
+  panelTitle.inactiveForeground: *GRAY_1
+  panelInput.border:
+
+  # Title Bar Colors #
+  titleBar.activeBackground: *GRAY_3
+  titleBar.activeForeground: *BLACK_1
+  titleBar.inactiveBackground: *GRAY_3
+  titleBar.inactiveForeground: *BLACK_1
+  titleBar.border:
+
+  # Menu Bar #
+  menubar.selectionForeground: *BLACK_1
+  menubar.selectionBackground: *DARKEN
+  menubar.selectionBorder:
+  menu.foreground: *BLACK_1
+  menu.background: *GRAY_4
+  menu.selectionForeground: *BLACK_1
+  menu.selectionBackground: *GOPHER_BLUE_2
+  menu.selectionBorder:
+  menu.separatorBackground: *GRAY_1
+  menu.border: *GRAY_3
+
+  # Notification Colors #
+  notificationCenter.border: *GRAY_3
+  notificationCenterHeader.foreground: *BLACK_1
+  notificationCenterHeader.background: *GRAY_3
+  notificationToast.border: *GRAY_3
+  notifications.foreground: *BLACK_1
+  notifications.background: *GRAY_4
+  notifications.border: *GRAY_3
+  notificationLink.foreground: *LINK_BLUE
+  notificationsErrorIcon.foreground:
+  notificationsWarningIcon.foreground:
+  notificationsInfoIcon.foreground:
+
+  # Terminal #
+  terminal.background: *BLACK_2
+  terminal.foreground: *WHITE
+
+  terminal.ansiBlack: *BLACK_2
+  terminal.ansiBlue: *GOPHER_BLUE_1
+  terminal.ansiCyan: *LIGHT_BLUE
+  terminal.ansiGreen: *AQUA
+  terminal.ansiMagenta: *PINK
+  terminal.ansiRed: *FUCHSIA
+  terminal.ansiWhite: *GOPHER_BLUE_3
+  terminal.ansiYellow: *YELLOW
+
+  terminal.ansiBrightBlack: *GRAY_1
+  terminal.ansiBrightBlue: *GOPHER_BLUE_1
+  terminal.ansiBrightCyan: *LIGHT_BLUE
+  terminal.ansiBrightGreen: *AQUA
+  terminal.ansiBrightMagenta: *PINK
+  terminal.ansiBrightRed: *FUCHSIA
+  terminal.ansiBrightWhite: *GOPHER_BLUE_3
+  terminal.ansiBrightYellow: *YELLOW
+
+  # Welcome Page #
+  welcomePage.background: *CODE_BACKGROUND
+  welcomePage.buttonBackground: *GOPHER_BLUE_3
+  welcomePage.buttonHoverBackground: *GOPHER_BLUE_2
+  walkThrough.embeddedEditorBackground: *CODE_BACKGROUND
+
+  # Settings Editor Colors #
+  settings.headerForeground: *BLACK_1
+  settings.modifiedItemIndicator: *GOPHER_BLUE_1
+  settings.dropdownBackground: *WHITE
+  settings.dropdownForeground: *BLACK_1
+  settings.dropdownBorder: *GRAY_2
+  settings.dropdownListBorder: *BLACK_1
+  settings.checkboxBackground: *WHITE
+  settings.checkboxForeground: *GOPHER_BLUE_1
+  settings.checkboxBorder: *GRAY_2
+  settings.textInputBackground: *WHITE
+  settings.textInputForeground: *BLACK_1
+  settings.textInputBorder: *GRAY_2
+  settings.numberInputBackground: *WHITE
+  settings.numberInputForeground: *BLACK_1
+  settings.numberInputBorder: *GRAY_2
+
+tokenColors:
+  - name: Strong
+    scope: strong
+    settings:
+      fontStyle: "bold"
+  - name: Emphasis
+    scope: emphasis
+    settings:
+      fontStyle: "italic"
+  - name: Embedded Source
+    scope: source.embedded
+    settings:
+      foreground: *CODE_FOREGROUND
+  - name: Comments
+    scope:
+      - comment
+      - punctuation.definition.comment
+    settings:
+      foreground: *CODE_COMMENT
+  - name: "Comments: Preprocessor"
+    scope: comment.block.preprocessor
+    settings:
+      fontStyle: ""
+      foreground: *CODE_COMMENT
+  - name: "Comments: Documentation"
+    scope:
+      - comment.documentation
+      - comment.block.documentation
+    settings:
+      foreground: *CODE_COMMENT
+  - name: Invalid - Illegal
+    scope: invalid.illegal
+    settings:
+      fontStyle: underline
+      foreground: *ERROR
+  - name: Symbols
+    scope:
+      - punctuation
+      - meta.bracket
+      - meta.parentheses
+    settings:
+      foreground: *CODE_SYMBOL
+  - name: Keywords
+    scope:
+      - keyword.operator
+      - keyword
+      - storage
+    settings:
+      foreground: *CODE_KEYWORD
+  - name: Constants
+    scope:
+      - constant.language
+      - support.constant
+      - variable.language
+      - constant.numeric
+      - constant.character
+      - constant
+    settings:
+      foreground: *CODE_CONSTANT
+  - name: Variables
+    scope:
+      - support.variable
+    settings:
+      foreground: *CODE_FOREGROUND
+  - name: Binding
+    scope:
+      - entity.name.function
+      - entity.name.variable.local
+      - variable.other.assignment
+      - variable.other.declaration
+      - variable.other.definition
+      - binding
+      - meta.definition.variable
+    settings:
+      foreground: *CODE_BINDING
+  - name: Function call
+    scope: support.function
+    settings:
+      foreground: *CODE_FOREGROUND
+  - name: Builtin Function Call
+    scope: support.function.builtin
+    settings:
+      foreground: *CODE_KEYWORD
+  - name: Types
+    scope:
+      - support.type
+      - support.class
+      - entity.name.type
+      - entity.name.class
+      - entity.other.inherited-class
+      - entity.name.exception
+      - storage.type.boolean
+      - storage.type.numeric
+      - storage.type.uintptr
+      - storage.type.string
+      - storage.type.rune
+    settings:
+      foreground: *CODE_TYPE
+  - name: Sections
+    scope: entity.name.section
+    settings:
+      fontStyle: bold
+  - name: Strings
+    scope:
+      - string
+      - punctuation.definition.string
+    settings:
+      foreground: *CODE_STRING
+  - name: "Strings: Regular Expressions"
+    scope: string.regexp
+    settings:
+      foreground: *CODE_KEYWORD
+  - name: "Strings: Symbols"
+    scope: constant.other.symbol
+    settings:
+      foreground: *CODE_CONSTANT
+  - name: "HTML: Doctype Declaration"
+    scope:
+      - meta.tag.sgml.doctype
+      - meta.tag.sgml.doctype string
+      - meta.tag.sgml.doctype entity.name.tag
+      - meta.tag.sgml punctuation.definition.tag.html
+    settings:
+      foreground: *GRAY_1
+  - name: "HTML: Tags"
+    scope:
+      - punctuation.definition.tag.html
+      - punctuation.definition.tag.begin.html
+      - punctuation.definition.tag.end.html
+      - entity.name.tag
+    settings:
+      foreground: *CODE_KEYWORD
+  - name: "HTML: Entities"
+    scope:
+      - constant.character.entity
+      - punctuation.definition.entity
+    settings:
+      foreground: *CODE_STRING
+  - name: "CSS: Selectors"
+    scope:
+      - meta.selector
+      - meta.selector entity
+      - meta.selector entity punctuation
+      - entity.name.tag.css
+    settings:
+      foreground: *CODE_CONSTANT
+  - name: "CSS: Property Names"
+    scope:
+      - meta.property-name
+      - support.type.property-name
+    settings:
+      foreground: *CODE_STRING
+  - name: "CSS: Property Values"
+    scope:
+      - meta.property-value
+      - meta.property-value constant.other
+      - support.constant.property-value
+    settings:
+      foreground: *CODE_STRING
+  - name: "CSS: Important Keyword"
+    scope: keyword.other.important
+    settings:
+      fontStyle: bold
+  - name: "Markup: Changed"
+    scope: markup.changed
+    settings:
+      foreground: *CODE_FOREGROUND
+  - name: "Markup: Deletion"
+    scope: markup.deleted
+    settings:
+      foreground: *CODE_FOREGROUND
+  - name: "Markup: Emphasis"
+    scope: markup.italic
+    settings:
+      fontStyle: italic
+  - name: "Markup: Error"
+    scope: markup.error
+    settings:
+      foreground: *ERROR
+  - name: "Markup: Insertion"
+    scope: markup.inserted
+    settings:
+      foreground: *CODE_FOREGROUND
+  - name: "Markup: Link"
+    scope: meta.link
+    settings:
+      foreground: *CODE_KEYWORD
+  - name: "Markup: Output"
+    scope:
+      - markup.output
+      - markup.raw
+    settings:
+      foreground: *GRAY_1
+  - name: "Markup: Prompt"
+    scope: markup.prompt
+    settings:
+      foreground: *GRAY_1
+  - name: "Markup: Heading"
+    scope: markup.heading
+    settings:
+      foreground: *CODE_FOREGROUND
+  - name: "Markup: Strong"
+    scope: markup.bold
+    settings:
+      fontStyle: bold
+  - name: "Markup: Traceback"
+    scope: markup.traceback
+    settings:
+      foreground: *ERROR
+  - name: "Markup: Underline"
+    scope: markup.underline
+    settings:
+      fontStyle: underline
+  - name: Markup Quote
+    scope: markup.quote
+    settings:
+      foreground: *CODE_CONSTANT
+  - name: Markup Lists
+    scope: markup.list
+    settings:
+      foreground: *CODE_KEYWORD
+  - name: Markup Styling
+    scope:
+      - markup.bold
+      - markup.italic
+    settings:
+      foreground: *CODE_CONSTANT
+  - name: Markup Inline
+    scope: markup.inline.raw
+    settings:
+      fontStyle: ""
+      foreground: *CODE_STRING
+  - name: "Extra: Diff Range"
+    scope:
+      - meta.diff.range
+      - meta.diff.index
+      - meta.separator
+    settings:
+      foreground: *GRAY_1
+  - name: "Extra: Diff From"
+    scope: meta.diff.header.from-file
+    settings:
+      foreground: *GRAY_1
+  - name: "Extra: Diff To"
+    scope: meta.diff.header.to-file
+    settings:
+      foreground: *GRAY_1
+  - name: JSON Key
+    scope: support.type.property-name
+    settings:
+      foreground: *CODE_KEYWORD

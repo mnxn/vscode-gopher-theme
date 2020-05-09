@@ -1,0 +1,49 @@
+{
+	"name": "gopher-theme",
+	"displayName": "Gopher Theme",
+	"description": "Theme Inspired by the Go Playground",
+	"icon": "images/icon.png",
+	"version": "0.1.0",
+	"publisher": "mnxn",
+	"license": "MIT",
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"gopher",
+		"go",
+		"light",
+		"theme",
+		"color-theme"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mnxn/vscode-gopher-theme"
+	},
+	"homepage": "https://github.com/mnxn/vscode-gopher-theme/blob/master/README.md",
+	"engines": {
+		"vscode": "^1.43.0"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Gopher",
+				"uiTheme": "vs",
+				"path": "./themes/gopher-theme.json"
+			}
+		]
+	},
+	"scripts": {
+		"build": "node ./build.js",
+		"watch": "npm-watch",
+		"package": "vsce package -o gopher-theme.vsix",
+		"vscode:prepublish": "npm run build"
+	},
+	"watch": {
+		"build": "src/gopher-theme.yml"
+	},
+	"devDependencies": {
+		"js-yaml": "^3.13.1",
+		"npm-watch": "^0.6.0"
+	}
+}
