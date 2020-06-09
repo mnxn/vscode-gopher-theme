@@ -1,5 +1,6 @@
 name: Gopher
 type: light
+semanticHighlighting: true
 gopher-colors:
   primary:
     gopher-blue:
