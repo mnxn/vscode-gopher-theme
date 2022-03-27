@@ -3,7 +3,7 @@
 	"displayName": "Gopher Theme",
 	"description": "Theme Inspired by the Go Playground",
 	"icon": "images/icon.png",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"publisher": "mnxn",
 	"license": "MIT",
 	"categories": [
@@ -43,7 +43,8 @@
 		"build": "src/gopher-theme.yml"
 	},
 	"devDependencies": {
-		"js-yaml": "^3.13.1",
-		"npm-watch": "^0.6.0"
+		"js-yaml": "4.1.0",
+		"npm-watch": "0.11.0",
+		"vsce": "2.7.0"
 	}
 }
